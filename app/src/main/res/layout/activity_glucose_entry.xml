@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <EditText
+            android:id="@+id/glucoseInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter glucose level (mg/dL)"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/mealInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Meal description (e.g., Lunch: rice + fish)"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/insulinInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Insulin dose (units)"
+            android:inputType="number"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Reading"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>
